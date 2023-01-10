@@ -1,352 +1,354 @@
 {
-    "cities": [
-        {
-            "id": 1,
-            "name": "New York",
-            "country": "USA",
-            "x": 40.730610,
-            "y": -73.935242
-        },
-        {
-            "id": 2,
-            "name": "Los Angeles",
-            "country": "USA",
-            "x": 34.052235,
-            "y": -118.243683
-        },
-        {
-            "id": 3,
-            "name": "Chicago",
-            "country": "USA",
-            "x": 41.875565,
-            "y": -87.624421
-        },
-        {
-            "id": 4,
-            "name": "Houston",
-            "country": "USA",
-            "x": 29.758938,
-            "y": -95.367697
-        },
-        {
-            "id": 5,
-            "name": "Phoenix",
-            "country": "USA",
-            "x": 33.448376,
-            "y": -112.074036
-        },
-        {
-            "id": 6,
-            "name": "Philadelphia",
-            "country": "USA",
-            "x": 39.952724,
-            "y": -75.163526
-        },
-        {
-            "id": 7,
-            "name": "San Antonio",
-            "country": "USA",
-            "x": 29.424349,
-            "y": -98.494615
-        },
-        {
-            "id": 8,
-            "name": "San Diego",
-            "country": "USA",
-            "x": 32.715329,
-            "y": -117.157255
-        },
-        {
-            "id": 9,
-            "name": "Dallas",
-            "country": "USA",
-            "x": 32.776272,
-            "y": -96.796856
-        },
-        {
-            "id": 10,
-            "name": "San Jose",
-            "country": "USA",
-            "x": 37.339386,
-            "y": -121.894955
-        },
-        {
-            "id": 11,
-            "name": "Austin",
-            "country": "USA",
-            "x": 30.267153,
-            "y": -97.743061
-        },
-        {
-            "id": 12,
-            "name": "Jacksonville",
-            "country": "USA",
-            "x": 30.332184,
-            "y": -81.655651
-        },
-        {
-            "id": 13,
-            "name": "San Francisco",
-            "country": "USA",
-            "x": 37.774929,
-            "y": -122.419416
-        },
-        {
-            "id": 14,
-            "name": "Indianapolis",
-            "country": "USA",
-            "x": 39.768403,
-            "y": -86.158068
-        },
-        {
-            "id": 15,
-            "name": "Columbus",
-            "country": "USA",
-            "x": 39.961176,
-            "y": -82.998794
-        },
-        {
-            "id": 16,
-            "name": "Fort Worth",
-            "country": "USA",
-            "x": 32.725409,
-            "y": -97.320849
-        },
-        {
-            "id": 17,
-            "name": "Charlotte",
-            "country": "USA",
-            "x": 35.227087,
-            "y": -80.843127
-        },
-        {
-            "id": 18,
-            "name": "Detroit",
-            "country": "USA",
-            "x": 42.331429,
-            "y": -83.045753
-        },
-        {
-            "id": 19,
-            "name": "El Paso",
-            "country": "USA",
-            "x": 31.761878,
-            "y": -106.485022
-        },
-        {
-            "id": 20,
-            "name": "Memphis",
-            "country": "USA",
-            "x": 35.149534,
-            "y": -90.04898
-        },
-        {
-            "id": 21,
-            "name": "Boston",
-            "country": "USA",
-            "x": 42.361145,
-            "y": -71.057083
-        },
-        {
-            "id": 22,
-            "name": "Nashville",
-            "country": "USA",
-            "x": 36.1627,
-            "y": -86.781602
-        },
-        {
-            "id": 23,
-            "name": "Seattle",
-            "country": "USA",
-            "x": 47.608013,
-            "y": -122.335167
-        },
-        {
-            "id": 24,
-            "name": "Denver",
-            "country": "USA",
-            "x": 39.739236,
-            "y": -104.990251
-        },
-        {
-            "id": 25,
-            "name": "Washington",
-            "country": "USA",
-            "x": 38.907192,
-            "y": -77.036871
-        },
-        {
-            "id": 26,
-            "name": "London",
-            "country": "UK",
-            "x": 51.509865,
-            "y": -0.118092
-        },
-        {
-            "id": 27,
-            "name": "Paris",
-            "country": "France",
-            "x": 48.856613,
-            "y": 2.352222
-        }{
-            "id": 28,
-            "name": "Rome",
-            "country": "Italy",
-            "x": 41.902782,
-            "y": 12.496366
-        },
-        {
-            "id": 29,
-            "name": "Madrid",
-            "country": "Spain",
-            "x": 40.416775,
-            "y": -3.70379
-        },
-        {
-            "id": 30,
-            "name": "Berlin",
-            "country": "Germany",
-            "x": 52.520008,
-            "y": 13.404954
-        },
-        {
-            "id": 31,
-            "name": "Istanbul",
-            "country": "Turkey",
-            "x": 41.008238,
-            "y": 28.978359
-        },
-        {
-            "id": 32,
-            "name": "Moscow",
-            "country": "Russia",
-            "x": 55.751244,
-            "y": 37.618423
-        },
-        {
-            "id": 33,
-            "name": "Beijing",
-            "country": "China",
-            "x": 39.904211,
-            "y": 116.407395
-        },
-        {
-            "id": 34,
-            "name": "Oslo",
-            "country": "Norway",
-            "x": 59.913869,
-            "y": 10.752245
-        },
-        {
-            "id": 35,
-            "name": "Amsterdam",
-            "country": "Netherlands",
-            "x": 52.377956,
-            "y": 4.897070
-        },
-        {
-            "id": 36,
-            "name": "Brussels",
-            "country": "Belgium",
-            "x": 50.850346,
-            "y": 4.351721
-        },
-        {
-            "id": 37,
-            "name": "Lisbon",
-            "country": "Portugal",
-            "x": 38.722252,
-            "y": -9.139337
-        },
-        {
-            "id": 38,
-            "name": "Budapest",
-            "country": "Hungary",
-            "x": 47.497912,
-            "y": 19.040235
-        },
-        {
-            "id": 39,
-            "name": "Stockholm",
-            "country": "Sweden",
-            "x": 59.334591,
-            "y": 18.063240
-        },
-        {
-            "id": 40,
-            "name": "Vienna",
-            "country": "Austria",
-            "x": 48.208174,
-            "y": 16.373819
-        },
-        {
-            "id": 41,
-            "name": "Prague",
-            "country": "Czech Republic",
-            "x": 50.087811,
-            "y": 14.420460
-        },{
-            "id": 42,
-            "name": "Copenhagen",
-            "country": "Denmark",
-            "x": 55.676097,
-            "y": 12.568337
-        },
-        {
-            "id": 43,
-            "name": "Athens",
-            "country": "Greece",
-            "x": 37.983810,
-            "y": 23.727539
-        },
-        {
-            "id": 44,
-            "name": "Dublin",
-            "country": "Ireland",
-            "x": 53.349805,
-            "y": -6.260310
-        },
-        {
-            "id": 45,
-            "name": "Reykjavik",
-            "country": "Iceland",
-            "x": 64.126521,
-            "y": -21.817439
-        },
-        {
-            "id": 46,
-            "name": "Helsinki",
-            "country": "Finland",
-            "x": 60.169856,
-            "y": 24.938379
-        },
-        {
-            "id": 47,
-            "name": "Luxembourg City",
-            "country": "Luxembourg",
-            "x": 49.611622,
-            "y": 6.131935
-        },
-        {
-            "id": 48,
-            "name": "Monaco",
-            "country": "Monaco",
-            "x": 43.738418,
-            "y": 7.424615
-        },
-        {
-            "id": 49,
-            "name": "Vatican City",
-            "country": "Vatican City",
-            "x": 41.902916,
-            "y": 12.453389
-        },
-        {
-            "id": 50,
-            "name": "Zagreb",
-            "country": "Croatia",
-            "x": 45.815011,
-            "y": 15.981919
-        }
-	]
+  "cities": [
+    {
+      "id": 1,
+      "name": "New York",
+      "continent": "North America",
+      "x": 40.730610,
+      "y": -73.935242
+    },
+    {
+      "id": 2,
+      "name": "Los Angeles",
+      "continent": "North America",
+      "x": 34.052235,
+      "y": -118.243683
+    },
+    {
+      "id": 3,
+      "name": "Chicago",
+      "continent": "North America",
+      "x": 41.875565,
+      "y": -87.624421
+    },
+    {
+      "id": 4,
+      "name": "Houston",
+      "continent": "North America",
+      "x": 29.758938,
+      "y": -95.367697
+    },
+    {
+      "id": 5,
+      "name": "Phoenix",
+      "continent": "North America",
+      "x": 33.448376,
+      "y": -112.074036
+    },
+    {
+      "id": 6,
+      "name": "Philadelphia",
+      "continent": "North America",
+      "x": 39.952724,
+      "y": -75.163526
+    },
+    {
+      "id": 7,
+      "name": "San Antonio",
+      "continent": "North America",
+      "x": 29.424349,
+      "y": -98.494615
+    },
+    {
+      "id": 8,
+      "name": "San Diego",
+      "continent": "North America",
+      "x": 32.715329,
+      "y": -117.157255
+    },
+    {
+      "id": 9,
+      "name": "Dallas",
+      "continent": "North America",
+      "x": 32.776272,
+      "y": -96.796856
+    },
+    {
+      "id": 10,
+      "name": "San Jose",
+      "continent": "North America",
+      "x": 37.339386,
+      "y": -121.894955
+    },
+    {
+      "id": 11,
+      "name": "Austin",
+      "continent": "North America",
+      "x": 30.267153,
+      "y": -97.743061
+    },
+    {
+      "id": 12,
+      "name": "Jacksonville",
+      "continent": "North America",
+      "x": 30.332184,
+      "y": -81.655651
+    },
+    {
+      "id": 13,
+      "name": "San Francisco",
+      "continent": "North America",
+      "x": 37.774929,
+      "y": -122.419416
+    },
+    {
+      "id": 14,
+      "name": "Indianapolis",
+      "continent": "North America",
+      "x": 39.768403,
+      "y": -86.158068
+    },
+    {
+      "id": 15,
+      "name": "Columbus",
+      "continent": "North America",
+      "x": 39.961176,
+      "y": -82.998794
+    },
+    {
+      "id": 16,
+      "name": "Fort Worth",
+      "continent": "North America",
+      "x": 32.725409,
+      "y": -97.320849
+    },
+    {
+      "id": 17,
+      "name": "Charlotte",
+      "continent": "North America",
+      "x": 35.227087,
+      "y": -80.843127
+    },
+    {
+      "id": 18,
+      "name": "Detroit",
+      "continent": "North America",
+      "x": 42.331429,
+      "y": -83.045753
+    },
+    {
+      "id": 19,
+      "name": "El Paso",
+      "continent": "North America",
+      "x": 31.761878,
+      "y": -106.485022
+    },
+    {
+      "id": 20,
+      "name": "Memphis",
+      "continent": "North America",
+      "x": 35.149534,
+      "y": -90.04898
+    },
+    {
+      "id": 21,
+      "name": "Boston",
+      "continent": "North America",
+      "x": 42.361145,
+      "y": -71.057083
+    },
+    {
+      "id": 22,
+      "name": "Nashville",
+      "continent": "North America",
+      "x": 36.1627,
+      "y": -86.781602
+    },
+    {
+      "id": 23,
+      "name": "Seattle",
+      "continent": "North America",
+      "x": 47.608013,
+      "y": -122.335167
+    },
+    {
+      "id": 24,
+      "name": "Denver",
+      "continent": "North America",
+      "x": 39.739236,
+      "y": -104.990251
+    },
+    {
+      "id": 25,
+      "name": "Washington",
+      "continent": "North America",
+      "x": 38.907192,
+      "y": -77.036871
+    },
+    {
+      "id": 26,
+      "name": "London",
+      "continent": "Europe",
+      "x": 51.509865,
+      "y": -0.118092
+    },
+    {
+      "id": 27,
+      "name": "Paris",
+      "continent": "Europe",
+      "x": 48.856613,
+      "y": 2.352222
+    },
+    {
+      "id": 28,
+      "name": "Rome",
+      "continent": "Europe",
+      "x": 41.902782,
+      "y": 12.496366
+    },
+    {
+      "id": 29,
+      "name": "Madrid",
+      "continent": "Europe",
+      "x": 40.416775,
+      "y": -3.70379
+    },
+    {
+      "id": 30,
+      "name": "Berlin",
+      "continent": "Europe",
+      "x": 52.520008,
+      "y": 13.404954
+    },
+    {
+      "id": 31,
+      "name": "Istanbul",
+      "continent": "Europe",
+      "x": 41.008238,
+      "y": 28.978359
+    },
+    {
+      "id": 32,
+      "name": "Moscow",
+      "continent": "Europe",
+      "x": 55.751244,
+      "y": 37.618423
+    },
+    {
+      "id": 33,
+      "name": "Beijing",
+      "continent": "Europe",
+      "x": 39.904211,
+      "y": 116.407395
+    },
+    {
+      "id": 34,
+      "name": "Oslo",
+      "continent": "Europe",
+      "x": 59.913869,
+      "y": 10.752245
+    },
+    {
+      "id": 35,
+      "name": "Amsterdam",
+      "continent": "Europe",
+      "x": 52.377956,
+      "y": 4.897070
+    },
+    {
+      "id": 36,
+      "name": "Brussels",
+      "continent": "Europe",
+      "x": 50.850346,
+      "y": 4.351721
+    },
+    {
+      "id": 37,
+      "name": "Lisbon",
+      "continent": "Europe",
+      "x": 38.722252,
+      "y": -9.139337
+    },
+    {
+      "id": 38,
+      "name": "Budapest",
+      "continent": "Europe",
+      "x": 47.497912,
+      "y": 19.040235
+    },
+    {
+      "id": 39,
+      "name": "Stockholm",
+      "continent": "Europe",
+      "x": 59.334591,
+      "y": 18.063240
+    },
+    {
+      "id": 40,
+      "name": "Vienna",
+      "continent": "Europe",
+      "x": 48.208174,
+      "y": 16.373819
+    },
+    {
+      "id": 41,
+      "name": "Prague",
+      "continent": "Europe",
+      "x": 50.087811,
+      "y": 14.420460
+    },
+    {
+      "id": 42,
+      "name": "Copenhagen",
+      "continent": "Europe",
+      "x": 55.676097,
+      "y": 12.568337
+    },
+    {
+      "id": 43,
+      "name": "Athens",
+      "continent": "Europe",
+      "x": 37.983810,
+      "y": 23.727539
+    },
+    {
+      "id": 44,
+      "name": "Dublin",
+      "continent": "Europe",
+      "x": 53.349805,
+      "y": -6.260310
+    },
+    {
+      "id": 45,
+      "name": "Reykjavik",
+      "continent": "Europe",
+      "x": 64.126521,
+      "y": -21.817439
+    },
+    {
+      "id": 46,
+      "name": "Helsinki",
+      "continent": "Europe",
+      "x": 60.169856,
+      "y": 24.938379
+    },
+    {
+      "id": 47,
+      "name": "Luxembourg City",
+      "continent": "Europe",
+      "x": 49.611622,
+      "y": 6.131935
+    },
+    {
+      "id": 48,
+      "name": "Monaco",
+      "continent": "Europe",
+      "x": 43.738418,
+      "y": 7.424615
+    },
+    {
+      "id": 49,
+      "name": "Vatican City",
+      "continent": "Europe",
+      "x": 41.902916,
+      "y": 12.453389
+    },
+    {
+      "id": 50,
+      "name": "Zagreb",
+      "continent": "Europe",
+      "x": 45.815011,
+      "y": 15.981919
+    }
+  ]
 }
