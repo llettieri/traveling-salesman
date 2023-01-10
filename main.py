@@ -1,5 +1,24 @@
+import json
 import math
 from itertools import permutations
+import numpy as np
+import pandas as pd
+
+
+f= open('cities.json')
+
+file = json.load(f)
+pd.DataFrame = file
+
+print(pd.DataFrame)
+
+
+cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
+
+print("Welchen Kontinent wollen sie bereisen? ")
+print("Hallo diese Städte bieten wir dir an und berechnen dir die schnellste Route um diese zu bereisen. ")
+
+input = input("In welche Städte wollen Sie gehen?")
 
 
 def flight_line(x1, y1, x2, y2):
@@ -43,12 +62,13 @@ def traveling_salesman(cities, distances):
 
 
 # Example usage
-cities = ['Barcelona', 'Amsterdam', 'New York']
+cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
 
 distances = {
     'Barcelona': [41.3927755, 2.0701491],
     'Amsterdam': [52.3547498, 4.8339208],
-    'New York': [40.6976701, -74.2598663]
+    'New York': [40.6976701, -74.2598663],
+    'Zürich': [47.3775366, 8.4666957]
 }
 
 print(traveling_salesman(cities, distances))  # Outputs: 30
