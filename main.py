@@ -1,36 +1,27 @@
 import json
 import math
 from itertools import permutations
-import numpy as np
-import pandas as pd
 
 
-f= open('cities.json')
-
-file = json.load(f)
-pd.DataFrame = file
-
-print(pd.DataFrame)
-
-
-cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
-
-print("Welchen Kontinent wollen sie bereisen? ")
-print("Hallo diese Städte bieten wir dir an und berechnen dir die schnellste Route um diese zu bereisen. ")
-
-input = input("In welche Städte wollen Sie gehen?")
-
-
-def flight_line(x1, y1, x2, y2):
+def calc_flight_line(x1, y1, x2, y2):
     x = x2 - x1
     y = y2 - y1
     result = math.sqrt(math.pow(x, 2) + math.pow(y, 2))
     return result
 
 
-def traveling_salesman(cities, distances):
+def traveling_salesman(cities):
+    cityNames = []
+    distances = {}
+
+    for city in cities:
+        cityNames.append(city['name'])
+        distances.update({city['name']: [city['x'], city['y']]})
+
     # Generate all possible permutations of the cities
-    all_permutations = permutations(cities)
+    fixed_start = cityNames[0];
+    rest_destinations = cityNames[:0] + cityNames[1:]
+    all_permutations = permutations(rest_destinations)
 
     # Set the initial minimum distance to a very large number
     min_distance = float('inf')
@@ -39,36 +30,67 @@ def traveling_salesman(cities, distances):
     # Iterate through all permutations and calculate the total distance for each permutation
     for permutation in all_permutations:
         distance = 0
-        for i in range(len(permutation) - 1):
-            city_a = permutation[i]
-            city_b = permutation[i + 1]
-            distance += flight_line(distances[city_a][0], distances[city_a][1], distances[city_b][0],
-                                    distances[city_b][1])
+        combination = (fixed_start,) + permutation
+
+        for i in range(len(combination) - 1):
+            city_a = combination[i]
+            city_b = combination[i + 1]
+
+            distance += calc_flight_line(distances[city_a][0], distances[city_a][1], distances[city_b][0],
+                                         distances[city_b][1])
 
         # If the total distance for this permutation is less than the current minimum distance, set the minimum
         # distance to this distance
         if distance < min_distance:
             min_distance = distance
-            min_path = permutation
+            min_path = combination
 
     resultList = list(min_path)
     resultList.append(min_path[0])
     start = distances[min_path[0]]
     last = distances[min_path[len(min_path) - 1]]
-    min_distance += flight_line(last[0], last[1], start[0], start[1])
+    min_distance += calc_flight_line(last[0], last[1], start[0], start[1])
 
     # Return the minimum distance
     return min_distance, resultList
 
 
-# Example usage
+data = json.load(open('cities.json'))
+
+europe = data['continents']['Europe']
+northAmerica = data['continents']['North America']
+
 cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
 
-distances = {
-    'Barcelona': [41.3927755, 2.0701491],
-    'Amsterdam': [52.3547498, 4.8339208],
-    'New York': [40.6976701, -74.2598663],
-    'Zürich': [47.3775366, 8.4666957]
-}
+continentInput = input("Welchen Kontinent wollen sie bereisen?  1 = Europe, 2 = North America: ")
+selectedContinent = []
 
-print(traveling_salesman(cities, distances))  # Outputs: 30
+if continentInput == '1':
+    selectedContinent = europe
+elif continentInput == '2':
+    selectedContinent = northAmerica
+else:
+    print("No valid continent!")
+    exit(1)
+
+for city in selectedContinent:
+    print(city['id'], city['name'])
+
+cityInput = input("Welche Städte möchtes du besuchen (komma getrennt)?: ")
+selectedCities = cityInput.replace(' ', '').split(',')
+cities = []
+
+
+for selection in selectedCities:
+    for city in selectedContinent:
+        if str(city['id']) == selection:
+            cities.append(city)
+
+start = input("Define your start city ID: ")
+orderedCities = cities.copy()
+for city in cities:
+    if str(city['id']) == start:
+        orderedCities.remove(city)
+        orderedCities.insert(0, city)
+
+print(traveling_salesman(orderedCities))
