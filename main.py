@@ -1,16 +1,13 @@
 import json
 import math
 from itertools import permutations
-import numpy as np
 import pandas as pd
 
+file = open('cities.json')
+pd.DataFrame = json.load(file)
+data = pd.DataFrame
 
-f= open('cities.json')
-
-file = json.load(f)
-pd.DataFrame = file
-
-print(pd.DataFrame)
+continent = pd.Series(["continent"])
 
 
 cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
@@ -27,16 +24,13 @@ def flight_line(x1, y1, x2, y2):
     result = math.sqrt(math.pow(x, 2) + math.pow(y, 2))
     return result
 
-
 def traveling_salesman(cities, distances):
-    # Generate all possible permutations of the cities
+
     all_permutations = permutations(cities)
 
-    # Set the initial minimum distance to a very large number
     min_distance = float('inf')
     min_path = []
 
-    # Iterate through all permutations and calculate the total distance for each permutation
     for permutation in all_permutations:
         distance = 0
         for i in range(len(permutation) - 1):
@@ -45,8 +39,6 @@ def traveling_salesman(cities, distances):
             distance += flight_line(distances[city_a][0], distances[city_a][1], distances[city_b][0],
                                     distances[city_b][1])
 
-        # If the total distance for this permutation is less than the current minimum distance, set the minimum
-        # distance to this distance
         if distance < min_distance:
             min_distance = distance
             min_path = permutation
@@ -57,11 +49,8 @@ def traveling_salesman(cities, distances):
     last = distances[min_path[len(min_path) - 1]]
     min_distance += flight_line(last[0], last[1], start[0], start[1])
 
-    # Return the minimum distance
     return min_distance, resultList
 
-
-# Example usage
 cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
 
 distances = {
