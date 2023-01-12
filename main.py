@@ -60,9 +60,8 @@ data = json.load(open('cities.json'))
 europe = data['continents']['Europe']
 northAmerica = data['continents']['North America']
 
-cities = ['Barcelona', 'Amsterdam', 'New York', 'Zürich']
 
-continentInput = input("Welchen Kontinent wollen sie bereisen?  1 = Europe, 2 = North America: ")
+continentInput = input("Which continent do you want to visit?  1 = Europe, 2 = North America: ")
 selectedContinent = []
 
 if continentInput == '1':
@@ -76,7 +75,7 @@ else:
 for city in selectedContinent:
     print(city['id'], city['name'])
 
-cityInput = input("Welche Städte möchtes du besuchen (komma getrennt)?: ")
+cityInput = input("Which cities would you like to visit (comma separated)?: ")
 selectedCities = cityInput.replace(' ', '').split(',')
 cities = []
 
