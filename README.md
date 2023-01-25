@@ -10,6 +10,8 @@ addiert. Wenn der innere For-Loop durch ist, dann wird geschaut, ob "distance" k
 der Fall ist, dann wird die jetzige distance min_distance und der min_path wird mit der jetzigen combination gesetzt.
 Hiermit wird die Kombination mit den kleinsten Distanzen berechnet.
 
+![Flussdiagramm](Flussdiagramm.png)
+
 ## Methoden
 
 ### calc_flight_line(x1, y1, x2, y2)
