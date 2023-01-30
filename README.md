@@ -10,7 +10,7 @@ addiert. Wenn der innere For-Loop durch ist, dann wird geschaut, ob "distance" k
 der Fall ist, dann wird die jetzige distance min_distance und der min_path wird mit der jetzigen combination gesetzt.
 Hiermit wird die Kombination mit den kleinsten Distanzen berechnet.
 
-![Flussdiagramm](Flussdiagramm.png)
+![Algorithmus Diagramm](Algorithmus-Flussdiagramm.png)
 
 ## Methoden
 
@@ -32,7 +32,21 @@ Objekt,
 welches ein "**North America**" und "**Europe**" Attribut besitzt. Diese zwei Attribute sind jeweils Listen mit 25
 verschiedenen
 Städte, welche im Kontinent liegen.
-<br>
+
+```
+{
+  "continents": {
+    "Europe": [
+      {
+        "id": 26,
+        "name": "London",
+        "x": 51.509865,
+        "y": -0.118092
+      }
+}
+```
+
+Dies hier ist ein Beispiel wie es im JSON aussieht. Wie schon beschrieben gibt es Kontinente mit einer Liste von Städte.
 
 ## Libraries
 
@@ -40,3 +54,7 @@ Um die Kombinationen zu generieren, verwenden wir **permutations von itertools**
 <br>
 Für die Berechnung der Distanz zwischen zwei Städte wird **math** verwendet.
 Da es eine JSON-Datei ist, kann man diese sehr einfach in Python lesen. Hierfür verwenden wir "**json.load()**".
+
+## User Infos
+
+![User Diagramm](User-Flussdiagramm.png)

@@ -19,7 +19,7 @@ def traveling_salesman(cities):
         distances.update({city['name']: [city['x'], city['y']]})
 
     # Generate all possible permutations of the cities
-    fixed_start = cityNames[0];
+    fixed_start = cityNames[0]
     rest_destinations = cityNames[:0] + cityNames[1:]
     all_permutations = permutations(rest_destinations)
 
